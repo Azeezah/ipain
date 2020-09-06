@@ -1,0 +1,91 @@
+<html>
+  <div id="topbar">
+    <div class="col-3">
+      <img src="drprofilepic.jpg" id="profilepic" />
+      Dr. Vishnu
+    </div>
+    <div class="col-3 logodiv">
+      <img class="logo" src="drprofilepic.jpg" />
+    </div>
+    <div class="col-3">
+    </div>
+  </div>
+  <div>
+    <p class="welcomemsg">
+      Welcome!
+      <br />
+      This is your pain evaluation for your appointment with Dr. Vishnu.
+    </p>
+  </div>
+  <div id="bottombar">
+    <div class="col-2">
+      <img class="leftarrow" src="nextarrow.svg" />
+    </div>
+    <div class="col-8 response">
+      <button class="startbutton">Start</button>
+    </div>
+    <div class="col-2">
+      <img class="rightarrow" src="nextarrow.svg" />
+    </div>
+  </div>
+  <style>
+    #profilepic {
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+      background-image: linear-gradient(to left, teal, white);
+    }
+    #topbar {
+      background-image: linear-gradient(to right, teal, white);
+      margin: 0;
+      overflow: hidden; /* Otherwise, the floating child divs won't affect topbar's height or width. */
+    }
+    .col-3 {
+      float: left;
+      width: 33.333%;
+    }
+    .logodiv {
+      text-align: center;
+    }
+    #bottombar {
+      width: 100%;
+      height: 100px;
+    }
+    .leftarrow {
+      height: 100px;
+      transform: rotateZ(180deg);
+      margin-left: 30px;
+    }
+    .rightarrow {
+      height: 100px;
+      margin-right: 30px;
+    }
+    .col-8 {
+      float: left;
+      width: 66.66%;
+      text-align: center;
+    }
+    .col-2 {
+      float: left;
+      width: 16.66%;
+    }
+    .startbutton {
+      width: 100px;
+      height: 70px;
+      font-size: 30px;
+      margin: 3% auto;
+    }
+    .welcomemsg {
+      text-align: center;
+      color: white;
+      font-family: serif;
+      font-size: 30px;
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+  </style>
+</html>
