@@ -1,0 +1,70 @@
+<html>
+  <link rel="stylesheet" href="style.css">
+  <map name="body-map">
+     <area target="" alt="" title="" href="" coords="199,137,209,165,212,187,212,217,243,226,262,224,284,219,286,217,284,170,301,139,291,106,263,97,233,95,212,107,200,126" shape="poly">
+     <area target="" alt="" title="" href="" coords="290,106,304,105,316,108,330,110,346,107,361,110,402,114,410,114,424,115,440,114,460,117,479,120,476,123,471,125,458,125,457,132,440,130,429,130,424,127,374,134,342,137,325,137,313,138,301,136,298,137" shape="poly">
+     <area target="" alt="" title="" href="" coords="286,219,289,261,289,276,292,296,284,301,269,301,255,299,249,280,242,296,230,301,220,301,211,300,204,299,213,219,242,225,263,226,275,222"     shape="poly">
+     <area target="" alt="" title="" href="" coords="292,298,286,335,287,346,286,351,285,356,275,366,267,363,263,358,261,351,260,341,260,335,256,321,256,300,268,301,284,301" shape="poly">
+     <area target="" alt="" title="" href="" coords="245,297,233,302,219,302,209,302,204,300,212,338,213,351,218,360,225,360,232,356,236,352,238,349" shape="poly">
+     <area target="" alt="" title="" href="" coords="213,353,212,395,212,407,215,418,219,428,222,435,232,435,233,404,238,394,238,386,237,378,237,371,236,361,238,351,231,356,224,359,218,360" shape="poly">
+     <area target="" alt="" title="" href="" coords="268,436,280,435,290,384,288,372,286,357,275,367,266,362,262,358,261,376,259,381,259,392" shape="poly">
+     <area target="" alt="" title="" href="" coords="221,437,231,435,235,462,230,468,227,478,218,478,208,479,202,473,211,467,216,458,222,449" shape="poly">
+     <area target="" alt="" title="" href="" coords="267,436,279,435,280,455,286,466,294,477,281,479,273,479,267,472,263,456" shape="poly">
+     <area target="" alt="" title="" href="" coords="198,137,188,137,175,137,166,137,155,135,142,132,139,134,123,134,98,131,77,126,70,129,52,130,49,132,41,130,43,126,28,127,17,122,21,119,28,115,46,116,80,114,85,113,96,114,105,113,140,113,148,111,172,113,179,110,191,105,208,104,223,101,212,107,201,124" shape="poly">
+     <area target="" alt="" title="" href="" coords="261,95,273,72,274,62,269,60,267,46,258,38,249,37,241,36,232,45,229,51,229,58,229,62,225,63,225,66,227,72,231,80,233,86,233,94" shape="poly">
+
+</map>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+
+<script>
+$(function() {
+    $('.map').maphilight();
+});
+</script>
+
+
+<style>
+.man {
+  width: 600.5px;
+  height: 560px;
+  background-repeat: no-repeat:
+}
+
+.map.man {
+  width: 497px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+</style>
+
+  <div id="topbar">
+    <div class="col-3">
+    .
+    </div>
+    <div class="col-3 logodiv">
+      <img class="logo" src="logo.jpg" />
+    </div>
+    <div class="col-3">
+    </div>
+  </div>
+  <div class="guy">
+    <p class="question">
+      Please select the body parts where you're experiencing pain.
+    </p>
+    <img src="armsout.png" usemap="#body-map" class="map man" />
+  </div>
+  <div id="bottombar">
+    <div class="col-2">
+      <img class="leftarrow" src="nextarrow.svg" />
+    </div>
+    <div class="col-8 response">
+      .
+    </div>
+    <div class="col-2">
+      <img class="rightarrow" src="nextarrow.svg" onclick="window.location.href='ask_lower_left.html'" />
+    </div>
+  </div>
+</html>

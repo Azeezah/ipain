@@ -12,9 +12,7 @@
   </div>
   <div>
     <p class="welcomemsg">
-      Welcome!
-      <br />
-      This is your pain evaluation for your appointment with Dr. Vishnu.
+      Name?
     </p>
   </div>
   <div id="bottombar">
@@ -22,13 +20,23 @@
       <img class="leftarrow" src="nextarrow.svg" />
     </div>
     <div class="col-8 response">
-      <button class="startbutton">Start</button>
+      <input type="text" placeholder="Your name..." />
     </div>
     <div class="col-2">
-      <img class="rightarrow" src="nextarrow.svg" />
+      <img class="rightarrow" src="nextarrow.svg" href="ask_pain.html" />
     </div>
   </div>
   <style>
+    input[type=text] {
+      width: 90%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid teal;
+      background-color: inherit;
+    }
+
     #profilepic {
       border-radius: 50%;
       height: 20px;
